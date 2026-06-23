@@ -17,8 +17,8 @@ class Program
             // Create a new student object
             var student = new Student
             {
-                FirstName = "Mhd",
-                LastName = "Imad",
+                FirstName = "Rasha",
+                LastName = "Mohamad",
                 DateOfBirth = new DateTime(1995,11, 9)
             };
 
@@ -31,7 +31,7 @@ class Program
             Console.WriteLine("The Student is added successfully!");
 
             // Retrieve and display the student to verify
-            var savedStudent = context.Students.FirstOrDefault(s => s.FirstName == "Hanna");
+            var savedStudent = context.Students.FirstOrDefault(s => s.FirstName == "Rasha");
             if (savedStudent != null)
             {
                 Console.WriteLine($" Student: {savedStudent.FirstName} {savedStudent.LastName}");
